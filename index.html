@@ -1,99 +1,168 @@
-
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStore - Tienda Tecnológica</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Punto de Fiallo - Tienda</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <!-- Barra de navegación -->
+  <body>
+    <!-- Encabezado -->
     <header>
-        <nav class="navbar">
-            <h1 class="logo">TechStore</h1>
+      <nav class="navbar">
+        <a href="#inicio" class="logo"> EL PUNTO <span>DE FIALLO</span> </a>
 
-            <ul class="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Sección principal -->
+    <!-- Portada -->
     <section class="inicio" id="inicio">
-        <div class="contenido-inicio">
-            <h2>La tecnología que necesitas</h2>
-            <p>Descubre nuestros productos y encuentra lo que buscas al mejor precio.</p>
-            <a href="#productos" class="boton">Ver productos</a>
-        </div>
-    </section>
+      <div class="contenido-inicio">
+        <span class="etiqueta">BIENVENIDO A NUESTRA TIENDA</span>
 
-    <!-- Sección de productos -->
-    <section class="productos" id="productos">
-        <h2>Nuestros productos</h2>
+        <h1>EL PUNTO <span>DE FIALLO</span></h1>
 
-        <div class="contenedor-productos">
-
-            <div class="producto">
-                <div class="imagen-producto">📱</div>
-                <h3>Smartphone</h3>
-                <p>Teléfono inteligente de última generación.</p>
-                <span class="precio">$299.99</span>
-                <a href="#contacto" class="boton-comprar">Consultar</a>
-            </div>
-
-            <div class="producto">
-                <div class="imagen-producto">💻</div>
-                <h3>Portátil</h3>
-                <p>Ideal para estudiar, trabajar y entretenerse.</p>
-                <span class="precio">$599.99</span>
-                <a href="#contacto" class="boton-comprar">Consultar</a>
-            </div>
-
-            <div class="producto">
-                <div class="imagen-producto">🎧</div>
-                <h3>Auriculares</h3>
-                <p>Disfruta de tu música con excelente sonido.</p>
-                <span class="precio">$49.99</span>
-                <a href="#contacto" class="boton-comprar">Consultar</a>
-            </div>
-
-            <div class="producto">
-                <div class="imagen-producto">⌚</div>
-                <h3>Smartwatch</h3>
-                <p>Controla tus actividades desde tu muñeca.</p>
-                <span class="precio">$89.99</span>
-                <a href="#contacto" class="boton-comprar">Consultar</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Sección nosotros -->
-    <section class="nosotros" id="nosotros">
-        <h2>Sobre nosotros</h2>
         <p>
-            En TechStore ofrecemos productos tecnológicos de calidad
-            para facilitar tu vida diaria. Nuestro objetivo es brindarte
-            una experiencia de compra sencilla y cómoda.
+          Todo lo que buscas, en un solo lugar. Calidad, variedad y buenos
+          precios.
         </p>
+
+        <a href="#productos" class="boton"> VER PRODUCTOS </a>
+      </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="productos" id="productos">
+      <div class="titulo-seccion">
+        <span>NUESTRO CATÁLOGO</span>
+        <h2>PRODUCTOS DESTACADOS</h2>
+        <p>Descubre algunos de nuestros productos disponibles.</p>
+      </div>
+
+      <div class="contenedor-productos">
+        <!-- Producto 1 -->
+        <article class="producto">
+          <div class="imagen-producto">📱</div>
+          <div class="informacion-producto">
+            <span class="categoria">TECNOLOGÍA</span>
+            <h3>Smartphone</h3>
+            <p>Teléfono inteligente para tu día a día.</p>
+            <div class="precio">25 000 CUP</div>
+            <a href="#contacto" class="boton-producto"> CONSULTAR </a>
+          </div>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="producto">
+          <div class="imagen-producto">🎧</div>
+          <div class="informacion-producto">
+            <span class="categoria">ACCESORIOS</span>
+            <h3>Auriculares Bluetooth</h3>
+            <p>Escucha tu música donde quieras.</p>
+            <div class="precio">3 500 CUP</div>
+            <a href="#contacto" class="boton-producto"> CONSULTAR </a>
+          </div>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="producto">
+          <div class="imagen-producto">⌚</div>
+          <div class="informacion-producto">
+            <span class="categoria">TECNOLOGÍA</span>
+            <h3>Reloj inteligente</h3>
+            <p>Controla tus actividades diariamente.</p>
+            <div class="precio">8 000 CUP</div>
+            <a href="#contacto" class="boton-producto"> CONSULTAR </a>
+          </div>
+        </article>
+
+        <!-- Producto 4 -->
+        <article class="producto">
+          <div class="imagen-producto">🔊</div>
+          <div class="informacion-producto">
+            <span class="categoria">ELECTRÓNICA</span>
+            <h3>Altavoz Bluetooth</h3>
+            <p>Disfruta de un sonido potente.</p>
+            <div class="precio">6 500 CUP</div>
+            <a href="#contacto" class="boton-producto"> CONSULTAR </a>
+          </div>
+        </article>
+
+        <!-- Producto 5 -->
+        <article class="producto">
+          <div class="imagen-producto">💻</div>
+          <div class="informacion-producto">
+            <span class="categoria">TECNOLOGÍA</span>
+            <h3>Computadora portátil</h3>
+            <p>Ideal para estudiar y trabajar.</p>
+            <div class="precio">85 000 CUP</div>
+            <a href="#contacto" class="boton-producto"> CONSULTAR </a>
+          </div>
+        </article>
+
+        <!-- Producto 6 -->
+        <article class="producto">
+          <div class="imagen-producto">⌨️</div>
+          <div class="informacion-producto">
+            <span class="categoria">ACCESORIOS</span>
+            <h3>Teclado inalámbrico</h3>
+            <p>Comodidad para tu computadora.</p>
+            <div class="precio">4 000 CUP</div>
+            <a href="#contacto" class="boton-producto"> CONSULTAR </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section class="nosotros" id="nosotros">
+      <div class="contenido-nosotros">
+        <span>CONÓCENOS</span>
+        <h2>EL PUNTO DE FIALLO</h2>
+
+        <p>
+          Somos una tienda dedicada a ofrecer productos de diferentes
+          categorías. Nuestro objetivo es brindar variedad, calidad y una
+          atención cercana a nuestros clientes.
+        </p>
+      </div>
     </section>
 
     <!-- Contacto -->
     <section class="contacto" id="contacto">
-        <h2>Contáctanos</h2>
-        <p>¿Tienes alguna pregunta sobre nuestros productos?</p>
-        <p>Correo: contacto@techstore.com</p>
+      <div class="titulo-seccion">
+        <span>ESTAMOS PARA AYUDARTE</span>
+        <h2>CONTÁCTANOS</h2>
+        <p>¿Te interesa alguno de nuestros productos?</p>
+      </div>
+
+      <div class="datos-contacto">
+        <div>
+          <h3>Correo electrónico</h3>
+          <p>contacto@elpuntodefiallo.com</p>
+        </div>
+
+        <div>
+          <h3>Teléfono</h3>
+          <p>+53 50000000</p>
+        </div>
+      </div>
     </section>
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2026 TechStore. Todos los derechos reservados.</p>
+      <h2>EL PUNTO <span>DE FIALLO</span></h2>
+      <p>Tu tienda de confianza.</p>
+      <p class="copyright">
+        &copy; 2026 El Punto de Fiallo. Todos los derechos reservados.
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
