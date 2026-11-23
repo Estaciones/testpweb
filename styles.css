@@ -1,216 +1,350 @@
+
 /* Configuración general */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: #f5f5f5;
-  color: #333;
+    background-color: #f5f5f5;
+    color: #222;
 }
 
-/* Barra de navegación */
+/* Encabezado */
 header {
-  background-color: #172554;
-  padding: 18px 8%;
+    background-color: #151515;
+    padding: 22px 8%;
+    border-bottom: 3px solid #c1121f;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-  color: white;
-  font-size: 28px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span,
+footer span {
+    color: #e31b23;
 }
 
 .menu {
-  display: flex;
-  list-style: none;
-  gap: 25px;
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
 
 .menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
 }
 
 .menu a:hover {
-  color: #93c5fd;
+    color: #e31b23;
 }
 
-/* Sección principal */
+/* Portada */
 .inicio {
-  background: linear-gradient(135deg, #1e3a8a, #2563eb);
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
+    background: linear-gradient(
+        120deg,
+        #111111,
+        #292929,
+        #8b0000
+    );
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
 }
 
-.contenido-inicio h2 {
-  font-size: 38px;
-  margin-bottom: 15px;
+.contenido-inicio {
+    max-width: 800px;
+    margin: auto;
+}
+
+.etiqueta {
+    color: #ff4b4b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.contenido-inicio h1 {
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.contenido-inicio h1 span {
+    color: #ed1c24;
 }
 
 .contenido-inicio p {
-  font-size: 18px;
-  margin-bottom: 30px;
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #dddddd;
+    line-height: 1.6;
 }
 
+/* Botones */
 .boton {
-  display: inline-block;
-  background-color: #facc15;
-  color: #172554;
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
+    display: inline-block;
+    background-color: #d71920;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 .boton:hover {
-  background-color: #eab308;
+    background-color: #a50000;
 }
 
-/* Sección de productos */
+/* Títulos de sección */
 .productos {
-  padding: 60px 8%;
-  text-align: center;
+    padding: 75px 8%;
 }
 
-.productos h2,
-.nosotros h2,
-.contacto h2 {
-  font-size: 30px;
-  margin-bottom: 35px;
-  color: #172554;
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 45px;
 }
 
+.titulo-seccion span,
+.contenido-nosotros span {
+    color: #d71920;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.titulo-seccion h2 {
+    font-size: 30px;
+    margin: 12px 0;
+    color: #151515;
+}
+
+.titulo-seccion p {
+    color: #666;
+}
+
+/* Catálogo de productos */
 .contenedor-productos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
 .producto {
-  background-color: white;
-  padding: 25px 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .producto:hover {
-  transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .imagen-producto {
-  background-color: #dbeafe;
-  border-radius: 8px;
-  padding: 25px;
-  font-size: 65px;
-  margin-bottom: 20px;
+    background-color: #eeeeee;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+}
+
+.informacion-producto {
+    padding: 22px;
+}
+
+.categoria {
+    color: #d71920;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .producto h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+    margin: 12px 0;
+    font-size: 20px;
 }
 
 .producto p {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 15px;
-  min-height: 35px;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 42px;
 }
 
 .precio {
-  display: block;
-  color: #2563eb;
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 20px;
+    color: #c1121f;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
-.boton-comprar {
-  display: inline-block;
-  background-color: #172554;
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+.boton-producto {
+    display: block;
+    background-color: #171717;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-.boton-comprar:hover {
-  background-color: #2563eb;
+.boton-producto:hover {
+    background-color: #d71920;
 }
 
-/* Sección nosotros */
+/* Sobre nosotros */
 .nosotros {
-  background-color: #e5edff;
-  text-align: center;
-  padding: 60px 15%;
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    padding: 75px 15%;
 }
 
-.nosotros p {
-  line-height: 1.7;
-  font-size: 16px;
+.contenido-nosotros {
+    max-width: 750px;
+    margin: auto;
 }
 
-/* Sección contacto */
+.contenido-nosotros h2 {
+    font-size: 30px;
+    margin: 15px 0 20px;
+}
+
+.contenido-nosotros p {
+    color: #cccccc;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* Contacto */
 .contacto {
-  text-align: center;
-  padding: 60px 20px;
+    padding: 75px 8%;
+    text-align: center;
 }
 
-.contacto p {
-  margin-bottom: 12px;
+.datos-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.datos-contacto h3 {
+    margin-bottom: 10px;
+    color: #c1121f;
+}
+
+.datos-contacto p {
+    color: #555;
 }
 
 /* Pie de página */
 footer {
-  background-color: #172554;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-top: 3px solid #d71920;
 }
 
-/* Adaptación a dispositivos móviles */
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #cccccc;
+    margin: 8px 0;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+/* Adaptación a tablets */
 @media (max-width: 900px) {
-  .contenedor-productos {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .contenedor-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+/* Adaptación a móviles */
 @media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    gap: 20px;
-  }
+    header {
+        padding: 20px;
+    }
 
-  .menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
+    .navbar {
+        flex-direction: column;
+        gap: 22px;
+    }
 
-  .contenido-inicio h2 {
-    font-size: 28px;
-  }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
 
-  .contenedor-productos {
-    grid-template-columns: 1fr;
-  }
+    .logo {
+        font-size: 21px;
+    }
 
-  .nosotros {
-    padding: 50px 25px;
-  }
+    .inicio {
+        padding: 80px 20px;
+    }
+
+    .contenido-inicio h1 {
+        font-size: 36px;
+    }
+
+    .contenido-inicio p {
+        font-size: 16px;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .productos {
+        padding: 55px 6%;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 25px;
+    }
+
+    .nosotros {
+        padding: 60px 25px;
+    }
+
+    .datos-contacto {
+        gap: 30px;
+    }
 }
